@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>果说科技</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" type="text/css" href="static/less/main.less"/>
+
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="static/less/less.js"></script>
+
+
+
+  </head>
+  <body >
+
+  <div ui-view="header" > </div>
+
+  <div ui-view > </div>
+
+  <div ui-view="footer" > </div>
+
+
+
+  <script src="javascript/jquery/dist/jquery.min.js"></script>
+
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="javascript/angular/angular.min.js"></script>
+  <script src="javascript/angular-animate/angular-animate.js"></script>
+  <script src="javascript/angular-aria/angular-aria.js"></script>
+  <script src="javascript/angular-cookies/angular-cookies.js"></script>
+  <script src="javascript/angular-messages/angular-messages.js"></script>
+  <script src="javascript/angular-resource/angular-resource.js"></script>
+  <script src="javascript/angular-ui-router.js"></script>
+  <script src="javascript/angular-sanitize/angular-sanitize.js"></script>
+  <script src="javascript/angular-touch/angular-touch.js"></script>
+  <script src="bootstrap/js/ui-bootstrap-tpls-0.13.1.js"></script>
+
+
+  <script src="src/app.js"></script>
+  <script src="src/controller/headerController.js"></script>
+  <script src="src/controller/homeController.js"></script>
+
+
+  <script>
+//    (function ( angular) {
+//      //首先加载语言包 再初始化NG
+////          var lang = store.get('language')||'zh'
+////          store.set('language',lang);
+////          $.getJSON('src/language/'+lang+'.json',function(d){
+////              L = d;
+////              angular.bootstrap(document,["RM"]);
+////          })
+//      angular.bootstrap(document, ["app"]);
+//    })( angular)
+      $(function(){//等所有 angularjs 加载完成之后再加载
+            angular.bootstrap(document, ["app"]);
+
+    })
+
+  </script>
+
+  </body>
+</html>
