@@ -3,7 +3,7 @@ G = {
   views: 'src/views'
 }
 ////
-var  RM = angular.module('app', ['ngCookies', 'ui.router']);
+var  RM = angular.module('app', ['ngCookies', 'ui.router','ui.bootstrap']);
 //
 ////
 angular.module('app').config(['$stateProvider', '$urlRouterProvider', '$httpProvider',
